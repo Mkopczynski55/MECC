@@ -1,0 +1,39 @@
+1. Introduction to SQL
+
+Nazwy tabel powinny być zapisywane małymi literami i tak samo nazwy kolumn. Tabele powinny być nazywane liczbą mnogą. Kolumny również powinny nosić nazwy pisane z małej litery, natomiast w tym przypadku
+jest wymóg, że powinny być w liczbie pojedynczej, np. total_fee. Nie powinny powielać nazwy tabeli - wiemy już z jakiej tabeli pochodzi dana kolumna. Nie ma potrzeby sztucznego wydłużania nazw.
+
+UID - Unique Identifier - kolumna klucza
+
+Data retrieval and data storage
+
+Fractional numbers (decimal numbers, floats)
+
+VARCHAR, INT, FLOAT, NUMEBR, NUMERIC, DATE
+
+blueprints
+
+schema
+
+brevity (zwięzłość)
+
+Jak doda się DISTINCT w SELECTIE to on patrzy na unikatowość na podstawie wszystkich pól nie tylko pierwszego po DISTINCT (czyli patrzy de facto na konkatenację)
+
+Widoki nie przechowują danych tylko kod zapytania, dlatego zawsze zwracają najnowszy widok tabeli (tabel) na bazie których zostały utworzone.
+
+CREATE VIEW xyz AS
+SELECT * FROM employees;
+
+CREATE VIEW nic nie zwraca, a jedynie zapisuje widok, z którego potem możemy SELECTować, żeby coś zwrócić
+
+SQL flavours
+
+ISO - International Organization for Standards and American National Standards Institute (ANSI)
+
+PostgreSQL (Open-source, free, stworzone na Berkley's University w USA i sponsorowane przez DARPA (Defense Advanced Research Projects Agency) Jest to zarówno DBMS jak i nazwa dialektu
+
+SQL Server (free and paid, create by Microsoft). Jest to nazwa DBMS. Pisze się w dialekcie T-SQL.
+
+PostgreSQL używa LIMIT na końcu a T-SQL SELECT TOP(2) id, name ...
+
+SQL flavour = SQL dialect
